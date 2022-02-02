@@ -1,6 +1,16 @@
 # vue-router-example
 
-> A Vue.js project
+> A Vue.js personal example project
+
+## branch step
+ - guide : https://jeonghwan-kim.github.io/2018/04/07/vue-router.html
+
+### branch step
+ - step1 : no-vue-router-lib
+ - step2 : simple-vue-route-lib-example
+ - step3 : no-child-router
+ - step4 : children-router
+ - step5 : dynamic-path-router
 
 ## Build Setup
 

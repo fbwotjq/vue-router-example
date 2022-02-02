@@ -18,14 +18,16 @@ export default new VueRouter({
       path: "/posts",
       component: {
         template: "<div>Posts <br/>" +
-          "<router-link to=\"/posts/new\">New Post</router-link>" +
-          "<router-link to=\"/posts/detail\">New Post</router-link>" +
+          "<router-link to=\"/posts/new\">New Post</router-link> " +
+          "<router-link to=\"/posts/detail\">New Post</router-link> " +
+          "<router-link to=\"/posts/1\">1</router-link> " +
           "<router-view></router-view>" +
           "</div>",
       },
       children: [ // 중첩된 라우트는 children 속성으로 하위 라우트를 정의할 수 있다.
         {path: "new", component: {template: "<div>New Post</div>"}},
         {path: "detail", component: {template: "<div>Post Detail</div>"}},
+        {path: ':id', component: {template: "<div>PostView<br />id:{{this.$route.params.id}}</div>"}}
       ],
     },
     {path: "*", component: NotFound},
