@@ -21,6 +21,7 @@
       <router-link to="/">Home</router-link>
       <router-link to="/about">about</router-link>
       <router-link to="/notFound">notFound</router-link>
+      <router-link to="/logout">logout</router-link>
       <router-link to="/posts">posts</router-link>
     </ul>
     <router-view></router-view>

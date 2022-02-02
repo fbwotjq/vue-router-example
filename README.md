@@ -12,6 +12,7 @@
  - step4 : children-router
  - step5 : dynamic-path-router
  - step6 : vue-dynamic-router-with-component
+ - step7 : navigation-guard-example
 
 ## Build Setup
 
