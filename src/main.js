@@ -1,14 +1,10 @@
 import Vue from 'vue'
-import {NotFound, routes} from "./router/firstRouter";
+import router from "./router"; // import {NotFound, routes} from "./router/firstRouter";
+import App from './App.vue'
 
 new Vue({
-  el: '#app',
-  computed: {
-    ViewComponent() {
-      return routes[window.location.pathname] || NotFound
-    },
-  },
-  render(h) {
-    return h(this.ViewComponent)
-  },
+  el: "#app",
+  render: h => h(App),
+  // 라우터 객체를 넘겨준다
+  router,
 })

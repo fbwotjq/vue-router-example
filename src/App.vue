@@ -16,6 +16,13 @@
       <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
     </ul>
+    <h2>router-example-link</h2>
+    <ul>
+      <router-link to="/">Home</router-link>
+      <router-link to="/about">about</router-link>
+      <router-link to="/notFound">notFound</router-link>
+    </ul>
+    <router-view></router-view>
   </div>
 </template>
 
