@@ -1,7 +1,14 @@
 import Vue from 'vue'
-import App from './App.vue'
+import {NotFound, routes} from "./router/firstRouter";
 
 new Vue({
   el: '#app',
-  render: h => h(App)
+  computed: {
+    ViewComponent() {
+      return routes[window.location.pathname] || NotFound
+    },
+  },
+  render(h) {
+    return h(this.ViewComponent)
+  },
 })
