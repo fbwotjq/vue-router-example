@@ -11,6 +11,7 @@
  - step3 : no-child-router
  - step4 : children-router
  - step5 : dynamic-path-router
+ - step6 : vue-dynamic-router-with-component
 
 ## Build Setup
 
